@@ -8,6 +8,8 @@ This documentation is targeted towards beginner level developers who needs a ste
 ## Prerequisite Knowledge
 This guide assumes that you have the following:
 - Basic knowledge of MySQL - you are expected to know how to connect to a MySQL server
+- Basic knowledge of SQL - you need to know its datatypes
+- Know how to run queries
 
 ## Software Requirements
 Please ensure you have the following before proceeding with the guide:
@@ -22,6 +24,12 @@ The three tasks covered in this guide are as follows:
 
 ## Typographical Conventions
 Notes and Warning 
+!!! warning
+!!! note
+``` Code Block ```
+
+// Notes
+<> Placeholder
 
 
 
