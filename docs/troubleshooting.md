@@ -1,6 +1,6 @@
 # Troubleshooting
-| Method      | Description                          |
-| ----------- | ------------------------------------ |
-| `GET`       | :material-check:     Fetch resource  |
-| `PUT`       | :material-check-all: Update resource |
-| `DELETE`    | :material-close:     Delete resource |
+| Method     | Description                          |
+| ---------- | ------------------------------------ |
+| Red X      | Copy the error message and search it on Google. It is likely a syntax error. |
+|            | |
+|            | |
