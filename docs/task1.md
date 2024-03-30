@@ -5,7 +5,7 @@
 ## Overview
 SQL is by far the most commonly used programming language when managing relational database. In relational databases, all data are organized into tables, which are structured collections of rows and columns. Therefore, it is important to first learn the basis of how to manage relational databases including how to create, manipulate, and drop tables. 
 
-### Setting up a database
+## Setting up a database
 Before getting started, we will need to create a database where the table can be saved in.
 
 1. Create a new database by entering the following code in the query window and then click the (lightningbolt) icon to run. 
@@ -20,7 +20,7 @@ USE <DatabaseName>;     // Replace <DatabaseName> with name of database
 
 At this point, a database should be made 
 
-### How to create a SQL table
+## How to create a SQL table
 After you have created a database, you will need to create a table to put it inside the database. 
 
 3. Type the command below to create a table.
@@ -45,7 +45,7 @@ The ```SELECT``` command chooses which columns to include in the returned table.
 At this point, you should see that a new table is made - graphics.
 
 
-### How to update a table record
+## How to update a table record
 5. In order to update a table record, run the following command.
 ```
 UPDATE <TableName>
@@ -56,7 +56,7 @@ The ```SET``` keyword specifies which column you wish to change.
 
 6. Verify that the correct update was made by running the same command in step 4. You should see the new changes in the updated table.
 
-### How to delete a table record
+## How to delete a table record
 7. In order to delete a table record, run the following command.
 
 ```
@@ -71,7 +71,7 @@ Warning: If you use the DELETE FROM clause without using in junction with the WH
 
 8. Verify the correct deletion was made by running the same command in step 4. You should see that the record has been deleted.
 
-### How to drop SQL tables
+## How to drop SQL tables
 Finally, We will go over how to drop an entire SQL table. 
 9. Run the following command to drop an entire table.
 
@@ -81,7 +81,7 @@ DROP TABLE <TableName>;
 ```DROP TABLE``` is used to specify which table to delete.
 
 
-### Conclusion
+## Conclusion
 By the end of this section, you will have learned the queries for the following:
 - Setting up a database
 - How to create a SQL table
