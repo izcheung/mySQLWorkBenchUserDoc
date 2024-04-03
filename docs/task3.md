@@ -1,22 +1,14 @@
 # Create and drop triggers
 
 ## Overview
-Triggers are special types of stored procedures that automatically execute or fire in response to certain events on a table or view in a database. Understanding how to create and manage triggers is essential for implementing complex business logic directly on the database level, ensuring data integrity, and automating tasks such as auditing changes, enforcing constraints, or updating related tables. This section provides a step-by-step guide on how to create and drop triggers, empowering you to enhance the functionality and efficiency of your database management.
+Triggers are special types of stored procedures that automatically executes or fires in response to certain events on a table or view in a database. Understanding how to create and manage triggers is essential for implementing complex business logic directly on the database level to ensure data integrity. It is also used to automate tasks such as auditing changes, enforcing constraints, or updating related tables. 
 
 
-## Setting up tables
+## Set up tables
 Before you create a trigger, it is important to set up your tables properly.
 
-1. Follow instructions in [Manage Relational Databases with SQL Operations](task1.md){:target="_blank"} to create some tables and insert some data.
+1. Follow instructions in [Create a TABLE](task1.md#create-a-table){:target="_blank"} to create some tables and insert data into them.
 
-
-2. Verify that the correct table was made by running the following command for all the tables created in step 1. 
-    ``` sql
-    SELECT * FROM <TableName>;
-    ```
-
-    At this point, you should see that a new table is made 
-    ![Image title](https://dummyimage.com/600x400/eee/aaa)
 
 ## How to create a trigger
 Creating a trigger involves specifying the timing (`BEFORE` or `AFTER` the event), the event (`INSERT`, `UPDATE`, or `DELETE`) that triggers it, and the operations to be performed.
@@ -101,7 +93,7 @@ Finally, We will go over how to drop the trigger.
 ## Conclusion
 By the end of this section, you have gained knowledge on the following tasks:
 
-- [x] The purpose and functionality of triggers in a database
-- [x] How to create and examine BEFORE INSERT triggers
-- [x] How to create and examine AFTER INSERT triggers
-- [x] How to drop triggers in database
+- [x] Understanding the purpose and functionality of triggers
+- [x] Creating BEFORE INSERT triggers
+- [x] Creating AFTER INSERT triggers
+- [x] Dropping triggers

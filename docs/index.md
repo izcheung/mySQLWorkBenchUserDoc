@@ -36,15 +36,27 @@ The three primary tasks utilizing SQL operations covered in this guide includes:
 
 ## Typographical Conventions
 
-``` This is a code block that shows what you should be inputting into your query window ```
+Throughout this user documentation, we will use the following layout and elements to provide relevant information.
 
-Whenever you see <  >, please replace this with your own information here
+### Placeholder
+Whenever you see `< >`, please replace this with your own information.
 
-< Replace this placeholder with the appropriate name >  
 
+### Code Block
+```
+This is a code block that contains the code you should input into your query window 
+```
+
+### Additional information
+> This provides additional information.
+
+
+### Admonitions
 !!! warning
-    Specifies an action that requires more caution before proceeding.
+    Specifies an action that requires caution before proceeding.
 !!! note
-    Includes helpful additional information.
-
+    Includes important reminder.
+!!! success
+    Provides an image showing what should be expected.
+    
 

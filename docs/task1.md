@@ -1,4 +1,4 @@
-# Manage Relational Databases with SQL Operations
+# Manage a TABLE
 
 ## Overview
 SQL is the most commonly used programming language when managing relational database. In relational databases, all data are organized into tables, which are structured collections of rows and columns. Therefore, it is important to first learn the basis of how to manage relational databases, which includes tasks such as creating, inserting, deleting, and dropping tables.
@@ -105,11 +105,12 @@ DROP TABLE <TableName>;
 ## Conclusion
 By the end of this section, you will have learned the SQL commands for the following:
 
+- [x] Understanding what SQL is and how its applied
 - [x] Setting up a database
 - [x] Creating a SQL table
 - [x] Inserting a tuple into a table
-- [x] Update a table record
-- [x] Delete a table record
-- [x] Drop SQL table
+- [x] Updating a table record
+- [x] Deleting a table record
+- [x] Dropping SQL table
 
 

@@ -58,8 +58,8 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 nav:
 - Home: "index.md"
-- Manage Relational Databases with SQL Operations: "task1.md"
-- Join tables into a view for future reference: "task2.md"
-- Create and drop triggers: "task3.md"
+- Manage a TABLE: "task1.md"
+- Join tables into a VIEW: "task2.md"
+- Create and drop a TRIGGER: "task3.md"
 - Troubleshooting: "troubleshooting.md"
 - Glossary: "glossary.md"
