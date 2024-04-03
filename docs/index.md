@@ -1,11 +1,10 @@
 # Introduction
 
-In this user documentation, we will be using [MySQL WorkBench](https://www.mysql.com/products/workbench/){:target="_blank"}, an integrated development environment (IDE) for MySQL to systematically walk users through the process of writing commonly-used SQL statements. Our objective is to provide a clear and concise tutorial on how to write SQL commands, equipting developers with the necessary skills to manage databases efficiently within MySQL Workbench.
+In this user documentation, we will be using [MySQL WorkBench](https://www.mysql.com/products/workbench/){:target="_blank"}, an integrated development environment (IDE) for MySQL to systematically guide users through the process of writing commonly-used SQL statements. Our objective is to provide a clear and concise tutorial on how to write SQL commands, equipting developers with the necessary skills to manage databases efficiently within MySQL Workbench.
 
 ## Background
 
 Structured Query Language (SQL) is a programming language that provides a set of commands that allow users to manage and manipulate relational databases. MySQL is a popular relational database management system that implements the SQL language. Some of the operations that a user can do include querying, updating, inserting, and deleting data from tables. 
-
 
 ## Intended Users
 This documentation is aimed at beginner-level developers who require a step-by-step guide on how to write SQL statements.
