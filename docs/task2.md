@@ -1,4 +1,4 @@
-# How to join tables into a view for future reference
+# Join tables into a view for future reference
 
 
 
@@ -16,7 +16,7 @@ Before getting started, ensure tables we intend to join are properly prepared, a
 
 
 2. Verify that the correct table was made by running the following command for all the tables created in step 1. 
-    ```
+    ``` sql
     SELECT * FROM <TableName>;
     ```
     The ```SELECT``` command chooses which columns to include in the returned table. The ```*``` symbol means to include all records. The ```FROM``` command tells SQL which table to query from.
@@ -29,8 +29,8 @@ After preparing multiple tables for joining, you need to decide how to join them
 
 ### Combine tables with INNER JOIN
 1. Execute the command below to perform inner join on two tables.
-    ```
-    SELECT <TableName1>.<ColumnName>, <TableName2>.<ColumnName>       // Replace <TableName1> and <TableName2> with the names of your tables, <ColumnName> with the names of the columns you want to select, and <CommonColumnName> with the name of the column used to relate both tables.
+    ``` sql
+    SELECT <TableName1>.<ColumnName>, <TableName2>.<ColumnName>       /* Replace <TableName1> and <TableName2> with the names of your tables, <ColumnName> with the names of the columns you want to select, and <CommonColumnName> with the name of the column used to relate both tables.
     FROM <TableName1>
     INNER JOIN <TableName2>
     ON <TableName1>.<CommonColumnName> = <TableName2>.<CommonColumnName>;
@@ -48,8 +48,8 @@ After preparing multiple tables for joining, you need to decide how to join them
 
 ### Combine tables with LEFT JOIN
 1. Execute the command below to perform inner join on two tables.
-    ```
-    SELECT <TableName1>.<ColumnName>, <TableName2>.<ColumnName>       // Replace <TableName1> and <TableName2> with the names of your tables, <ColumnName> with the names of the columns you want to select, and <CommonColumnName> with the name of the column used to relate both tables.
+    ``` sql
+    SELECT <TableName1>.<ColumnName>, <TableName2>.<ColumnName>       /* Replace <TableName1> and <TableName2> with the names of your tables, <ColumnName> with the names of the columns you want to select, and <CommonColumnName> with the name of the column used to relate both tables.
     FROM <TableName1>
     LEFT JOIN <TableName2>
     ON <TableName1>.<CommonColumnName> = <TableName2>.<CommonColumnName>;
@@ -69,16 +69,16 @@ After preparing multiple tables for joining, you need to decide how to join them
 After you combined data from multiple tables, you will need to create a view for the combined data to store in the database for future reference. 
 
 1. Execute the command below to create a view.
-    ```
-    CREATE VIEW <ViewName> AS         // Replace <ViewName> with the name of your view
-    <JoinQuery>;                      // Replace <JoinQuery> with your join query;
+    ``` sql
+    CREATE VIEW <ViewName> AS         /* Replace <ViewName> with the name of your view
+    <JoinQuery>;                      /* Replace <JoinQuery> with your join query;
     ```
 
     In the command provided, replace `<JoinQuery>` with the join query you crafted in the previous step. 
 
 2. Verify that the correct table was made by running the following command. 
-    ```
-    SELECT * FROM <ViewName>;         // Replace <ViewName> with the name of your view
+    ``` sql
+    SELECT * FROM <ViewName>;         /* Replace <ViewName> with the name of your view
     ```
     The ```SELECT``` command chooses which columns to include in the returned table. The ```*``` symbol means to include all records. The ```FROM``` command tells SQL which table to query from.
 
@@ -94,7 +94,7 @@ After you combined data from multiple tables, you will need to create a view for
 Finally, We will go over how to drop the view. 
 
 1. Run the following command to drop the view in database.
-    ```
+    ``` sql
     DROP VIEW [IF EXISTS] <ViewName>;
     ```
 

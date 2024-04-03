@@ -1,34 +1,30 @@
-# How to create, manipulate, and drop a SQL table
-
-
+# Manage Relational Databases with SQL Operations
 
 ## Overview
-SQL is by far the most commonly used programming language when managing relational database. In relational databases, all data are organized into tables, which are structured collections of rows and columns. Therefore, it is important to first learn the basis of how to manage relational databases, including how to create, manipulate, and drop tables. 
+SQL is the most commonly used programming language when managing relational database. In relational databases, all data are organized into tables, which are structured collections of rows and columns. Therefore, it is important to first learn the basis of how to manage relational databases, which includes tasks such as creating, inserting, deleting, and dropping tables.
 
-## Setting up a database
-Before getting started, we will need to create a database where the table can be saved in.
+## Set up a database
+Before getting started, we will need to create a database to store tables.
 
-1. Create a new database by entering the following code in the query window and then click the :fontawesome-solid-bolt-lightning: icon to run. 
-```
-CREATE <DatabaseName>;      // Replace <DatabaseName> with name of database
-```
-
-2. After creating the database, make sure you choose that database to use it. 
-```
- USE <DatabaseName>;     // Replace <DatabaseName> with name of database
+1. To create a new database, input the following code in the query window and execute it using the :fontawesome-solid-bolt-lightning: icon to run:
+``` sql
+CREATE <DatabaseName>;    
 ```
 
-    ![Image title](https://dummyimage.com/600x400/eee/aaa)
+2. After creating the database, make sure you select that database and use it. 
+``` sql
+USE <DatabaseName>;
+```
+    At this point, you should see that a database has been made. 
+     ![Image title](https://dummyimage.com/600x400/eee/aaa)
 
-    At this point, a database should be made 
-
-## How to create a SQL table
-After you have created a database, you will need to create a table to put it inside the database. 
+## Create a table
+Once you have created a database, you can create and put a new table inside the database. 
 
 1. Type the command below to create a table.
-```
-CREATE TABLE <TableName>        // Replace <TableName> with the name of table
-(<ColumnName> DATATYPE,         // Replace the <ColumnName> with the name of your columns and DATATYPE with the appropriate datatype
+``` sql
+CREATE TABLE <TableName>        
+(<ColumnName> DATATYPE,         
  <ColumnName> DATATYPE,         
  <ColumnName> DATATYPE);
 ```
@@ -36,59 +32,84 @@ CREATE TABLE <TableName>        // Replace <TableName> with the name of table
     !!! note
         Set as many ColumnNames as needed
 
-2. Verify that the correct table was made by running the following command. 
+2. Verify that the table was made correctly by running the following command. 
+``` sql
+SELECT * FROM <TableName>;
 ```
-SELECT * FROM <TableName>
-```
-The ```SELECT``` command chooses which columns to include in the returned table. The ```*``` symbol means to include all records. The ```FROM``` command tells SQL which table to query from.
+    - The ```SELECT``` command chooses which columns to include in the returned table.
+    - The ```*``` symbol means to include all records.
+    - The ```FROM``` command tells SQL which table to query from.
 
-    At this point, you should see that a new table is made 
+    At this point, you should see the new table.
+
     ![Image title](https://dummyimage.com/600x400/eee/aaa)
 
+## Insert a tuple into a table
+After creating a table, you can populate the table with data.
 
-## How to update a table record
-1. In order to update a table record, run the following command.
+1. To insert a tuple into a table, use the following command:
+``` sql
+INSERT INTO <TableName> (<ColumnName>, <ColumnName>, <ColumnName>) 
+VALUES ('A', 1, 1.0); 
 ```
+    - The ```INSERT INTO``` command is used to specify the name of the table you are inserting into.
+    - ```VALUES``` specifies the list of values that corresponding to the respective columns listed above.
+    !!! note
+        Ensure that the values you are inserting into the columns are of the correct datatype.
+
+
+2. Verify that the correct update was made. You should see the new row in the table.
+
+    ![Image title](https://dummyimage.com/600x400/eee/aaa)
+
+## Update a table record
+1. In the scenario that you wish to make a change to a record, you can run the following command:
+``` sql
 UPDATE <TableName>
-SET <ColumnName> = Value, <ColumnName> = Value, ... // Replace 'Value' with your desired value.  
+SET <ColumnName> = <Value>, <ColumnName> = <Value>;
 ```
-The ```UPDATE``` keyword indicates that you would like to make changes to an existing table.
-The ```SET``` keyword specifies which column you wish to change.
+    - The ```UPDATE``` keyword indicates that you would like to make changes to an existing table.
+    - The ```SET``` keyword specifies which column you wish to change.
 
-2. Verify that the correct update was made by running the same command in step 4. You should see the new changes in the updated table.
+2. Verify that the correct update was made using this (link) command. You should see the new changes in the updated table.
 
-## How to delete a table record
+    ![Image title](https://dummyimage.com/600x400/eee/aaa)
+
+## Delete a table record
 
 1. In order to delete a table record, run the following command.
-```
+``` sql
 DELETE FROM <TableName>
-WHERE condition
+WHERE condition;
 ```
-The ```DELETE FROM``` keyword specifies which table you would like to delete records from.
-The ```WHERE``` clause specifies the conditions that must be met before the record is deleted.
+    - The ```DELETE FROM``` keyword specifies which table you would like to delete records from.
+    - The ```WHERE``` clause specifies the conditions that must be met before the record is deleted.
 
     !!! warning
         If you use the DELETE FROM clause without using in junction with the WHERE clause, all the rows in the table will be deleted.
 
-2. Verify the correct deletion was made by running the same command in step 4. You should see that the record has been deleted.
+2. Verify the correct deletion was made. You should see that the record has been deleted.
 
-## How to drop SQL tables
+    ![Image title](https://dummyimage.com/600x400/eee/aaa)
+
+
+## Drop a SQL table
 Finally, We will go over how to drop an entire SQL table. 
 
 1. Run the following command to drop an entire table.
-```
+``` sql
 DROP TABLE <TableName>;
 ```
 
 
-
 ## Conclusion
-By the end of this section, you will have learned the queries for the following:
+By the end of this section, you will have learned the SQL commands for the following:
 
 - [x] Setting up a database
-- [x] How to create a SQL table
-- [x] How to update a table record
-- [x] How to delete a table record
-- [x] How to drop SQL tables
+- [x] Creating a SQL table
+- [x] Inserting a tuple into a table
+- [x] Update a table record
+- [x] Delete a table record
+- [x] Drop SQL table
 
 

@@ -1,4 +1,4 @@
-# How to create and drop triggers
+# Create and drop triggers
 
 ## Overview
 Triggers are special types of stored procedures that automatically execute or fire in response to certain events on a table or view in a database. Understanding how to create and manage triggers is essential for implementing complex business logic directly on the database level, ensuring data integrity, and automating tasks such as auditing changes, enforcing constraints, or updating related tables. This section provides a step-by-step guide on how to create and drop triggers, empowering you to enhance the functionality and efficiency of your database management.
@@ -11,7 +11,7 @@ Before you create a trigger, it's important to set up your tables properly.
 
 
 2. Verify that the correct table was made by running the following command for all the tables created in step 1. 
-    ```
+    ``` sql
     SELECT * FROM <TableName>;
     ```
     The ```SELECT``` command chooses which columns to include in the returned table. The ```*``` symbol means to include all records. The ```FROM``` command tells SQL which table to query from.
@@ -24,7 +24,7 @@ Creating a trigger involves specifying the timing (`BEFORE` or `AFTER` the event
 
 ### Create a BEFORE INSERT trigger
 1. Execute the command below to create a trigger:
-    ```
+    ``` sql
     CREATE TRIGGER <TriggerName>
     BEFORE INSERT ON <TableName>
     FOR EACH ROW
@@ -34,20 +34,20 @@ Creating a trigger involves specifying the timing (`BEFORE` or `AFTER` the event
     ```
 
     An example of trigger logic could be:
-    ```
+    ``` sql
     SET NEW.<ColumnName> = LOWER(NEW.<ColumnName>);
     ```
 
 2. Examine the trigger by performing the action it's designed to respond to on the specified table.
 
     For example, after setting up a `BEFORE INSERT` trigger to convert a column's data to lowercase *before insertion*, you can test the trigger's functionality by attempting to insert a record into the designated table, deliberately using uppercase letters in the targeted column. Execute the following command to observe the trigger in action:
-    ```
+    ``` sql
     INSERT INTO <TableName> (<ColumnName>, ...)
     VALUES ('UPPERCASE DATA', ...);
     ```
 
 3. Verify that the correct data has been inserted by running the following command for the table updated in step 2. 
-    ```
+    ``` sql
     SELECT * FROM <TableName>;
     ```
 
@@ -55,7 +55,7 @@ Creating a trigger involves specifying the timing (`BEFORE` or `AFTER` the event
 
 ### Create a AFTER INSERT trigger
 1. Execute the command below to create a trigger:
-    ```
+    ``` sql
     CREATE TRIGGER <TriggerName>
     AFTER INSERT ON <TableName>
     FOR EACH ROW
@@ -65,7 +65,7 @@ Creating a trigger involves specifying the timing (`BEFORE` or `AFTER` the event
     ```
 
     An example of trigger logic could be:
-    ```
+    ``` sql
     INSERT INTO <LogTableName> (<ForeignKeyColumn>, <TimestampColumn>)
     VALUES (NEW.<ForeignKeyValue>, NOW());
     ```
@@ -75,13 +75,13 @@ Creating a trigger involves specifying the timing (`BEFORE` or `AFTER` the event
 2. Examine the trigger by performing the action it's designed to respond to on the specified table.
 
     For example, after setting up a `AFTER INSERT` trigger to log a record in the log table *after insertion*, you can test the trigger's functionality by attempting to insert a record into the designated table and note the change in the log table. Execute the following command to observe the trigger in action:
-    ```
+    ``` sql
     INSERT INTO <TableName> (<ColumnName>, ...)
     VALUES ('anything', ...);
     ```
 
 3. Verify that a log record has been created successfully by running the following command for the log table. 
-    ```
+    ``` sql
     SELECT * FROM <LogTableName>;
     ```
 
@@ -91,7 +91,7 @@ Creating a trigger involves specifying the timing (`BEFORE` or `AFTER` the event
 Finally, We will go over how to drop the trigger. 
 
 1. Run the following command to drop the trigger in database.
-    ```
+    ``` sql
     DROP TRIGGER [IF EXISTS] <TriggerName>;
     ```
 
