@@ -27,11 +27,12 @@ Please ensure you have the following before proceeding with the guide:
 - **Integrated Development Environment (IDE):** [MySQL WorkBench](https://dev.mysql.com/downloads/workbench/){:target="_blank"}
 
 ## Procedures Overview
-The three main tasks using SQL operations are as follows:
+The three primary tasks utilizing SQL operations covered in this guide includes:
 
 - Manage a **TABLE**
 - Join tables into a **VIEW**
 - Create and drop a **TRIGGER**
+
 
 ## Typographical Conventions
 
