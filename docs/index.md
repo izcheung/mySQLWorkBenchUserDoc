@@ -1,9 +1,11 @@
 # Introduction
 
-MySQL is a relational database management system that uses Structured Query language (SQL) to access and manipulate databases. This user documentation guides you through how to write three types of commonly-used SQL statements. 
+Structured Query Language (SQL) is a programming language that provides a set of commands that allow users to manage and manipulate relational databases. MySQL is a popular relational database management system that implements the SQL language. Some of the operations that a user can do include querying, updating, inserting, and deleting data from tables. 
+
+In this user documentation, we will be using MySQL Workbench, an integrated development environment for MySQL to guide users step-by-step through how to write commonly-used SQL statements. 
 
 ## Intended Users
-This documentation is targeted towards beginner level developers who needs a step by step guide on how to write MySQL statements. 
+This documentation is aimed at beginner-level developers who require a step-by-step guide on how to write SQL statements.
 
 ## Prerequisite Knowledge
 This guide assumes that you have the following:
@@ -15,14 +17,14 @@ This guide assumes that you have the following:
 Please ensure you have the following before proceeding with the guide:
 
 - MacOS
-- MySQLWorkBench (Insert link)
+- [MySQL WorkBench](https://www.mysql.com/products/workbench/){:target="_blank"}
 
 ## Procedures Overview
-The three tasks covered in this guide are as follows:
+The three main tasks covered in this guide are as follows:
 
-- How to create, manipulate, and drop a SQL table
-- How to create and drop a trigger
-- How to create a transaction and rollback to certain savepoint
+- Manage Relational Databases with SQL Operations
+- Join tables into a view for future reference
+- Create and drop triggers
 
 ## Typographical Conventions
 
