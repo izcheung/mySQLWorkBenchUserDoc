@@ -22,7 +22,7 @@ Before you create a trigger, it's important to set up your tables properly.
 ## How to create a trigger
 Creating a trigger involves specifying the timing (`BEFORE` or `AFTER` the event), the event (`INSERT`, `UPDATE`, or `DELETE`) that triggers it, and the operations to be performed.
 
-### Create a BEFORE INSERT trigger
+### BEFORE INSERT trigger
 1. Execute the command below to create a trigger:
     ``` sql
     CREATE TRIGGER <TriggerName>
@@ -53,7 +53,7 @@ Creating a trigger involves specifying the timing (`BEFORE` or `AFTER` the event
 
     This step verifies that the `BEFORE INSERT` trigger is applied to new values.
 
-### Create a AFTER INSERT trigger
+### AFTER INSERT trigger
 1. Execute the command below to create a trigger:
     ``` sql
     CREATE TRIGGER <TriggerName>
