@@ -6,8 +6,14 @@
 | MySQL    | a relational database management system that uses Structured Query language (SQL) to access and manipulate databases |
 | MySQLWorkBench    | |
 | table    | |
-| MySQL    | :material-close:     Delete resource |
-| MySQL    | :material-close:     Delete resource |
-| MySQL    | :material-close:     Delete resource |
-| MySQL    | :material-close:     Delete resource |
+| join    | an action to combine two or more tables into a new table |
+| foreign key    | |
+| view    | |
+| trigger    | |
+| event    | |
+| data integrity    | |
+| foreign keys    | |
+| referential relationship    | |
+| log    | |
+| log table    | |
 
