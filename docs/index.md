@@ -9,8 +9,7 @@ This documentation is targeted towards beginner level developers who needs a ste
 This guide assumes that you have the following:
 
 - Basic knowledge of MySQL - you are expected to know how to connect to a MySQL server
-- Basic knowledge of SQL - you need to know its datatypes
-- Know how to run queries
+- Basic knowledge of SQL - you should know the basic fundamentals such as SQL datatypes
 
 ## Software Requirements
 Please ensure you have the following before proceeding with the guide:
@@ -26,11 +25,14 @@ The three tasks covered in this guide are as follows:
 - How to create a transaction and rollback to certain savepoint
 
 ## Typographical Conventions
-Notes and Warning 
+
+``` This is a code block that shows what you should be inputing into your query window ```
+
+< Replace this placeholder with the appropriate name >  
+
 !!! warning
+    Specifies an action that requires more caution before proceeding.
 !!! note
-``` Code Block ```
-// Notes
-<> Placeholder
+    Includes helpful additional information.
 
 

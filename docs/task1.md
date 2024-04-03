@@ -3,7 +3,7 @@
 
 
 ## Overview
-SQL is by far the most commonly used programming language when managing relational database. In relational databases, all data are organized into tables, which are structured collections of rows and columns. Therefore, it is important to first learn the basis of how to manage relational databases including how to create, manipulate, and drop tables. 
+SQL is by far the most commonly used programming language when managing relational database. In relational databases, all data are organized into tables, which are structured collections of rows and columns. Therefore, it is important to first learn the basis of how to manage relational databases, including how to create, manipulate, and drop tables. 
 
 ## Setting up a database
 Before getting started, we will need to create a database where the table can be saved in.
@@ -18,9 +18,9 @@ CREATE <DatabaseName>;      // Replace <DatabaseName> with name of database
  USE <DatabaseName>;     // Replace <DatabaseName> with name of database
 ```
 
-![Image title](https://dummyimage.com/600x400/eee/aaa)
+    ![Image title](https://dummyimage.com/600x400/eee/aaa)
 
-At this point, a database should be made 
+    At this point, a database should be made 
 
 ## How to create a SQL table
 After you have created a database, you will need to create a table to put it inside the database. 
@@ -42,8 +42,8 @@ SELECT * FROM <TableName>
 ```
 The ```SELECT``` command chooses which columns to include in the returned table. The ```*``` symbol means to include all records. The ```FROM``` command tells SQL which table to query from.
 
-At this point, you should see that a new table is made 
-![Image title](https://dummyimage.com/600x400/eee/aaa)
+    At this point, you should see that a new table is made 
+    ![Image title](https://dummyimage.com/600x400/eee/aaa)
 
 
 ## How to update a table record
