@@ -6,6 +6,7 @@ theme:
     - navigation.sections
     - navigation.top
     - toc.integrate
+    - content.code.copy
 
 markdown_extensions:
   - pymdownx.highlight:

@@ -28,7 +28,9 @@ The three main tasks covered in this guide are as follows:
 
 ## Typographical Conventions
 
-``` This is a code block that shows what you should be inputing into your query window ```
+``` This is a code block that shows what you should be inputting into your query window ```
+
+Whenever you see <  >, please replace this with your own information here
 
 < Replace this placeholder with the appropriate name >  
 

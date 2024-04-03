@@ -5,16 +5,15 @@ Triggers are special types of stored procedures that automatically execute or fi
 
 
 ## Setting up tables
-Before you create a trigger, it's important to set up your tables properly.
+Before you create a trigger, it is important to set up your tables properly.
 
-1. Follow instructions in [How to create, manipulate, and drop a SQL table](task1.md){:target="_blank"} to create some tables and insert some data.
+1. Follow instructions in [Manage Relational Databases with SQL Operations](task1.md){:target="_blank"} to create some tables and insert some data.
 
 
 2. Verify that the correct table was made by running the following command for all the tables created in step 1. 
     ``` sql
     SELECT * FROM <TableName>;
     ```
-    The ```SELECT``` command chooses which columns to include in the returned table. The ```*``` symbol means to include all records. The ```FROM``` command tells SQL which table to query from.
 
     At this point, you should see that a new table is made 
     ![Image title](https://dummyimage.com/600x400/eee/aaa)
@@ -22,7 +21,7 @@ Before you create a trigger, it's important to set up your tables properly.
 ## How to create a trigger
 Creating a trigger involves specifying the timing (`BEFORE` or `AFTER` the event), the event (`INSERT`, `UPDATE`, or `DELETE`) that triggers it, and the operations to be performed.
 
-### Create a BEFORE INSERT trigger
+### Create an BEFORE INSERT trigger
 1. Execute the command below to create a trigger:
     ``` sql
     CREATE TRIGGER <TriggerName>
@@ -70,7 +69,7 @@ Creating a trigger involves specifying the timing (`BEFORE` or `AFTER` the event
     VALUES (NEW.<ForeignKeyValue>, NOW());
     ```
     !!! note
-        For this example, ensure you have created a log table named `<LogTableName>` alongside your main table `<TableName>`. For guidance on creating a new table, please refer to [How to create, manipulate, and drop a SQL table](task1.md){:target="_blank"}.
+        For this example, ensure you have created a log table named `<LogTableName>` alongside your main table `<TableName>`. For guidance on creating a new table, please refer to [Manage Relational Databases with SQL Operations](task1.md){:target="_blank"}.
 
 2. Examine the trigger by performing the action it's designed to respond to on the specified table.
 

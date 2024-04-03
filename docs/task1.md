@@ -26,7 +26,7 @@ Once you have created a database, you can create and put a new table inside the 
 CREATE TABLE <TableName>        
 (<ColumnName> DATATYPE,         
  <ColumnName> DATATYPE,         
- <ColumnName> DATATYPE);
+ <ColumnName> DATATYPE), ...;
 ```
 
     !!! note
@@ -49,8 +49,8 @@ After creating a table, you can populate the table with data.
 
 1. To insert a tuple into a table, use the following command:
 ``` sql
-INSERT INTO <TableName> (<ColumnName>, <ColumnName>, <ColumnName>) 
-VALUES ('A', 1, 1.0); 
+INSERT INTO <TableName> (<ColumnName1>, <ColumnName2>, <ColumnName3>, ...) 
+VALUES (<Value1>, <Value2>, <Value3>, ...); 
 ```
     - The ```INSERT INTO``` command is used to specify the name of the table you are inserting into.
     - ```VALUES``` specifies the list of values that corresponding to the respective columns listed above.
@@ -66,7 +66,7 @@ VALUES ('A', 1, 1.0);
 1. In the scenario that you wish to make a change to a record, you can run the following command:
 ``` sql
 UPDATE <TableName>
-SET <ColumnName> = <Value>, <ColumnName> = <Value>;
+SET <ColumnName1> = <Value1>, <ColumnName2> = <Value2>, ... ;
 ```
     - The ```UPDATE``` keyword indicates that you would like to make changes to an existing table.
     - The ```SET``` keyword specifies which column you wish to change.
@@ -80,7 +80,7 @@ SET <ColumnName> = <Value>, <ColumnName> = <Value>;
 1. In order to delete a table record, run the following command.
 ``` sql
 DELETE FROM <TableName>
-WHERE condition;
+WHERE <condition>;
 ```
     - The ```DELETE FROM``` keyword specifies which table you would like to delete records from.
     - The ```WHERE``` clause specifies the conditions that must be met before the record is deleted.
