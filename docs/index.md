@@ -4,10 +4,14 @@ In this user documentation, we will be using [MySQL WorkBench](https://www.mysql
 
 ## Background
 
-Structured Query Language (SQL) is a programming language that provides a set of commands that allow users to manage and manipulate relational databases. MySQL is a popular relational database management system that implements the SQL language. Some of the operations that a user can do include querying, updating, inserting, and deleting data from tables. 
+Structured Query Language (SQL) is a programming language that provides a set of commands that allow users to manage and manipulate relational databases. [MySQL](https://www.mysql.com/){:target="_blank"} is a popular relational database management system (RDBMS) that implements the SQL language. Some of the operations that a user can do include querying, updating, inserting, and deleting data from tables. 
+
 
 ## Intended Users
-This documentation is aimed at beginner-level developers who require a step-by-step guide on how to write SQL statements.
+This documentation is targeted towards the following users:
+
+- Beginner-level developers who needs a step-by-step guide on writing SQL commands.
+- Analysts requiring SQL for conducting data processing tasks.
 
 ## Prerequisite Knowledge
 This guide assumes that you have the following:
@@ -18,15 +22,16 @@ This guide assumes that you have the following:
 ## Software Requirements
 Please ensure you have the following before proceeding with the guide:
 
-- MacOS
-- [MySQL WorkBench](https://www.mysql.com/products/workbench/){:target="_blank"}
+- **Operating System (OS):** MacOS
+- **Relational Database Management System (RDBMS)**: [MySQL](https://dev.mysql.com/downloads/mysql/){:target="_blank"}
+- **Integrated Development Environment (IDE):** [MySQL WorkBench](https://dev.mysql.com/downloads/workbench/){:target="_blank"}
 
 ## Procedures Overview
-The three main tasks covered in this guide are as follows:
+The three main tasks using SQL operations are as follows:
 
-- Manage Relational Databases with SQL Operations
-- Join tables into a view for future reference
-- Create and drop triggers
+- Manage a **TABLE**
+- Join tables into a **VIEW**
+- Create and drop a **TRIGGER**
 
 ## Typographical Conventions
 
