@@ -1,4 +1,4 @@
-site_name: My SQL Workbench User Doc
+site_name: How to Manage a Database
 theme:
   name: material
   features:
@@ -63,3 +63,4 @@ nav:
 - Create and drop a TRIGGER: "task3.md"
 - Troubleshooting: "troubleshooting.md"
 - Glossary: "glossary.md"
+

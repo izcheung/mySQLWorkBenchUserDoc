@@ -17,7 +17,7 @@ This documentation is targeted towards the following users:
 This guide assumes that you have the following:
 
 - Basic knowledge of MySQL - you are expected to know how to connect to a MySQL server
-- Basic knowledge of SQL - you should know the basic fundamentals such as SQL datatypes
+- Basic knowledge of SQL - you should know the basic fundamentals such as SQL datatypes and how to run queries
 
 ## Software Requirements
 Please ensure you have the following before proceeding with the guide:
@@ -33,13 +33,16 @@ The three primary tasks utilizing SQL operations covered in this guide includes:
 - Join tables into a **VIEW**
 - Create and drop a **TRIGGER**
 
+## MySQL WorkBench layout
 
 ## Typographical Conventions
 
 Throughout this user documentation, we will use the following layout and elements to provide relevant information.
 
 ### Placeholder
-Whenever you see `< >`, please replace this with your own information.
+
+- Whenever you see `< >`, please replace this with your own information. 
+- ```...``` Means there can be a variable number of elements.
 
 
 ### Code Block

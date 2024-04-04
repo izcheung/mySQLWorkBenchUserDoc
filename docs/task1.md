@@ -7,16 +7,21 @@ SQL is the most commonly used programming language when managing relational data
 Before getting started, we will need to create a database to store tables.
 
 1. To create a new database, input the following code in the query window and execute it using the :fontawesome-solid-bolt-lightning: icon to run:
-``` sql
-CREATE <DatabaseName>;    
-```
+    ``` sql
+    CREATE DATABASE <DatabaseName>;    
+    ```
+
+    !!! note
+        Click the refresh button to see your database appear on the Schema pane.
 
 2. After creating the database, make sure you select that database and use it. 
 ``` sql
 USE <DatabaseName>;
 ```
     At this point, you should see that a database has been made. 
-     ![Image title](https://dummyimage.com/600x400/eee/aaa)
+
+    !!! success
+        ![Image title](./images/DatabaseName4.jpg){ align=left }
 
 ## Create a table
 Once you have created a database, you can create and put a new table inside the database. 
@@ -26,23 +31,18 @@ Once you have created a database, you can create and put a new table inside the 
 CREATE TABLE <TableName>        
 (<ColumnName> DATATYPE,         
  <ColumnName> DATATYPE,         
- <ColumnName> DATATYPE), ...;
+ <ColumnName> DATATYPE, ...);
 ```
 
     !!! note
-        Set as many ColumnNames as needed
+        Click the refresh button to see your table under the database in the Schema pane.
 
-2. Verify that the table was made correctly by running the following command. 
-``` sql
-SELECT * FROM <TableName>;
-```
-    - The ```SELECT``` command chooses which columns to include in the returned table.
-    - The ```*``` symbol means to include all records.
-    - The ```FROM``` command tells SQL which table to query from.
+2. 
 
     At this point, you should see the new table.
 
-    ![Image title](https://dummyimage.com/600x400/eee/aaa)
+    !!! success
+        ![CreateTable](images/CreateTable.jpg)
 
 ## Insert a tuple into a table
 After creating a table, you can populate the table with data.
@@ -58,22 +58,33 @@ VALUES (<Value1>, <Value2>, <Value3>, ...);
         Ensure that the values you are inserting into the columns are of the correct datatype.
 
 
-2. Verify that the correct update was made. You should see the new row in the table.
+2. Verify that the insertion was made correctly by running the following command.  You should see the new row in the table.
 
-    ![Image title](https://dummyimage.com/600x400/eee/aaa)
+    ``` sql
+    SELECT * FROM <TableName>;
+    ```
+
+    - The ```SELECT``` command chooses which columns to include in the returned table.
+    - The ```*``` symbol means to include all records.
+    - The ```FROM``` command tells SQL which table to query from.
+
+    !!! success
+        ![Image title](images/VerifyTable.jpg)
 
 ## Update a table record
 1. In the scenario that you wish to make a change to a record, you can run the following command:
 ``` sql
 UPDATE <TableName>
-SET <ColumnName1> = <Value1>, <ColumnName2> = <Value2>, ... ;
+SET <ColumnName1> = <Updated Value>, ...
+WHERE <ColumnName2> = <Original Value>;
 ```
     - The ```UPDATE``` keyword indicates that you would like to make changes to an existing table.
     - The ```SET``` keyword specifies which column you wish to change.
+    - The ```WHERE``` keyword is used to extract only the records that fulfill the specified condition.
 
 2. Verify that the correct update was made using this (link) command. You should see the new changes in the updated table.
 
-    ![Image title](https://dummyimage.com/600x400/eee/aaa)
+    ![Update Table Record](images/UpdateTable.jpg)
 
 ## Delete a table record
 
@@ -90,7 +101,9 @@ WHERE <condition>;
 
 2. Verify the correct deletion was made. You should see that the record has been deleted.
 
-    ![Image title](https://dummyimage.com/600x400/eee/aaa)
+    !!! success
+        ![Delete Table Record](images/DeleteTableData.jpg)
+
 
 
 ## Drop a SQL table
@@ -100,6 +113,9 @@ Finally, We will go over how to drop an entire SQL table.
 ``` sql
 DROP TABLE <TableName>;
 ```
+
+    !!! success
+        ![Drop Table](images/DropTable.jpg)
 
 
 ## Conclusion
