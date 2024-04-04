@@ -4,14 +4,14 @@
 Triggers are special types of stored procedures that automatically executes or fires in response to certain events on a table or view in a database. Understanding how to create and manage triggers is essential for implementing complex business logic directly on the database level to ensure data integrity. It is also used to automate tasks such as auditing changes, enforcing constraints, or updating related tables. 
 
 
-## Set up tables
+## Set up tables for adding a trigger
 Before you create a trigger, it is important to set up your tables properly.
 
 1. Follow instructions in [Create a TABLE](task1.md#create-a-table){:target="_blank"} to create some tables and insert data into them.
 
 
-## How to create a trigger
-Creating a trigger involves specifying the timing (`BEFORE` or `AFTER` the event), the event (`INSERT`, `UPDATE`, or `DELETE`) that triggers it, and the operations to be performed. We will cover two of the most common types of SQL triggers, **BEFORE INSERT** and **AFTER INSERT**.
+## Create a trigger
+Creating a trigger involves specifying the timing (`BEFORE` or `AFTER` the event), the event (`INSERT`, `UPDATE`, or `DELETE`) that triggers it, and the operations to be performed. We will cover two of the most common types of SQL triggers: **BEFORE INSERT** and **AFTER INSERT**.
 
 ### BEFORE INSERT
 1. Execute the command below to create a trigger:
@@ -19,15 +19,16 @@ Creating a trigger involves specifying the timing (`BEFORE` or `AFTER` the event
     CREATE TRIGGER <TriggerName>
     BEFORE INSERT ON <TableName>
     FOR EACH ROW
-    BEGIN
-        -- Trigger logic goes here
-    END;
+    -- Trigger logic goes here
     ```
 
     > An example of the ```Trigger logic``` could be:
     ``` sql
     SET NEW.<ColumnName> = LOWER(NEW.<ColumnName>);
     ```
+
+    !!! success
+        ![Create Trigger](images/CreateTrigger.jpg)
 
 2. Verify the trigger by performing the action it is designed to respond to.
 
@@ -43,6 +44,7 @@ Creating a trigger involves specifying the timing (`BEFORE` or `AFTER` the event
     ```
 
     !!! success
+        ![Verify Trigger](images/VerifyTrigger.jpg)
 
 ### AFTER INSERT
 1. Execute the command below to create a trigger:
@@ -50,9 +52,8 @@ Creating a trigger involves specifying the timing (`BEFORE` or `AFTER` the event
     CREATE TRIGGER <TriggerName>
     AFTER INSERT ON <TableName>
     FOR EACH ROW
-    BEGIN
-        -- Trigger logic goes here
-    END;
+    -- Trigger logic goes here
+
     ```
 
     > An example of trigger logic could be:
@@ -62,6 +63,10 @@ Creating a trigger involves specifying the timing (`BEFORE` or `AFTER` the event
     ```
     !!! note
         For this example, ensure you have created a log table named `<LogTableName>` alongside your main table `<TableName>`. For guidance on creating a new table, please refer to [Create a TABLE](task1.md#create-a-table){:target="_blank"}.
+
+
+    !!! success
+        ![After Trigger](images/AfterTrigger.jpg)
 
 2. Verify the trigger by performing the action it is designed to respond to.
 
@@ -77,18 +82,24 @@ Creating a trigger involves specifying the timing (`BEFORE` or `AFTER` the event
     ```
 
     !!! success
+        ![Verify After Trigger](images/VerifyAfterTrigger.jpg)
 
-## How to drop triggers
+## Drop a trigger
 Finally, We will go over how to drop the trigger. 
 
 1. Run the following command to drop the trigger in database.
     ``` sql
-    DROP TRIGGER [IF EXISTS] <TriggerName>;
+    DROP TRIGGER <TriggerName>;
     ```
+
+    !!! success
+        ![Drop Trigger](images/DropTrigger.jpg)
+
 
 2. Repeat step 2 and 3 from [BEFORE INSERT](#before-insert) or [AFTER INSERT](#after-insert) to verify if trigger has been dropped.
 
-
+    !!! success
+        ![Verify Drop Trigger](images/VerifyDropTrigger.jpg)
 
 ## Conclusion
 By the end of this section, you have gained knowledge on the following tasks:
