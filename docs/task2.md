@@ -32,11 +32,11 @@ After preparing multiple tables for joining, you need to decide how to join them
 
     At this point, you should see the combined table in the output box. 
     !!! success
-        ![Image title](https://dummyimage.com/600x400/eee/aaa)
+        ![Inner Join](images/InnerJoin.jpg)
 
 2. Verify that the combined table was merged correctly by cross checking the result. 
 
-    > The row count in the combined table should match the expected number of matched records. Additionally, confirm that all desired columns are present in the combined table.
+    > The row count in the combined table should only contain rows where there is a match in both tables. Additionally, confirm that all desired columns are present in the combined table.
 
 
 ### LEFT JOIN
@@ -54,7 +54,7 @@ After preparing multiple tables for joining, you need to decide how to join them
     At this point, you should see the combined table in the output box. 
 
     !!! success
-        ![Image title](https://dummyimage.com/600x400/eee/aaa)
+        ![Image title](images/LeftJoin.jpg)
 
 
 2. Verify that the combined table was merged correctly by cross checking the result. 
@@ -77,8 +77,10 @@ After you combined data from multiple tables, you will need to create a view for
     SELECT * FROM <ViewName>;       
     ```
 
-
     > Make sure the query results match those from the join query in the [Combine multiple tables](#combine-multiple-tables) section.
+
+    !!! success
+        ![Image title](images/CreateView.jpg)
 
 3. Follow instructions in [Update a table record](task1.md#update-a-table-record){:target="_blank"} to update a record in one of the original tables. 
 
@@ -87,16 +89,20 @@ After you combined data from multiple tables, you will need to create a view for
     > Observe how the view automatically updates to reflect these changes, showcasing its dynamic connection to the source data.
 
     !!! success
+        ![Update View](images/UpdateView.jpg)
+
 
 ## Drop a view
 Finally, We will go over how to drop the view. 
 
 1. Run the following command to drop the view in database.
     ``` sql
-    DROP VIEW [IF EXISTS] <ViewName>;
+    DROP VIEW <ViewName>;
     ```
 
     !!! success
+        ![Drop View](images/DropView.jpg)
+
 
 
 ## Conclusion
