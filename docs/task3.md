@@ -1,4 +1,4 @@
-# Create and drop triggers
+# Create and drop a TRIGGER
 
 ## Overview
 Triggers are special types of stored procedures that automatically executes or fires in response to certain events on a table or view in a database. Understanding how to create and manage triggers is essential for implementing complex business logic directly on the database level to ensure data integrity. It is also used to automate tasks such as auditing changes, enforcing constraints, or updating related tables. 

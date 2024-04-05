@@ -84,7 +84,8 @@ WHERE <ColumnName2> = <Original Value>;
 
 2. Verify that the correct update was made using this (link) command. You should see the new changes in the updated table.
 
-    ![Update Table Record](images/UpdateTable.jpg)
+    !!! success
+        ![Update Table Record](images/UpdateTable.jpg)
 
 ## Delete a table record
 
