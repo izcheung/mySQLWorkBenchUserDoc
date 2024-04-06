@@ -2,6 +2,9 @@
 | Method     | Description                          |
 | ---------- | ------------------------------------ |
 | Red X      | Copy the error message and search it on Google. It is likely a syntax error. |
-|            | |
-|            | |
- 
+| INSERT data unsuccessful | Ensure that the value for any primary key is unique before insertion. You can use the `INSERT IGNORE` or `ON DUPLICATE KEY UPDATE` syntax to handle duplicates gracefully. |
+| DELETE data unsuccessful | This can occur when trying to delete a row that a foreign key in another table references, without addressing the dependent data. Resolve this by setting up foreign key constraints with `ON DELETE CASCADE` for cascading deletes (be cautious as this automatically deletes dependent records). |
+| Unexpected or missing results in JOIN | Ensure the join condition is correct and the appropriate join type (e.g., `INNER JOIN`, `LEFT JOIN`) is used for your query logic. Check that data types of joined fields are compatible. Adjust join type or conditions as needed to match expected results.  |
+| TRIGGER does not fire | Verify that the trigger is correctly defined, including correct table and event timing (`BEFORE` or `AFTER`). Ensure necessary permissions for creating and executing triggers. |
+| Denial of unsafe UPDATE / DELETE | This issue arises when you perform an `UPDATE` or `DELETE` operation without a `WHERE` clause, or when your `WHERE` clause does not reference a key column. To bypass this safety feature, you can disable it by executing `SET SQL_SAFE_UPDATES = 0;`. *Be mindful of the associated risks and make sure to re-enable the safety feature by setting `SQL_SAFE_UPDATES` back to `1` after completing your operation.* |
+| Data Type Mismatch | Validate and ensure that all data being inserted or updated matches the column's data type specifications. Use proper data conversion or casting as necessary. |
