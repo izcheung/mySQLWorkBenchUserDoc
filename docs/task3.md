@@ -14,6 +14,8 @@ Before you create a trigger, it is important to set up your tables properly.
 Creating a trigger involves specifying the timing (`BEFORE` or `AFTER` the event), the event (`INSERT`, `UPDATE`, or `DELETE`) that triggers it, and the operations to be performed. We will cover two of the most common types of SQL triggers: **BEFORE INSERT** and **AFTER INSERT**.
 
 ### BEFORE INSERT
+The BEFORE INSERT trigger is set up to automatically run special checks or tasks right before a new entry is added to a database table. This ensures that any data being added follows specific rules we've set in the trigger, maintaining consistency and quality.
+
 1. Execute the command below to create a trigger:
     ``` sql
     CREATE TRIGGER <TriggerName>
@@ -47,6 +49,8 @@ Creating a trigger involves specifying the timing (`BEFORE` or `AFTER` the event
         ![Verify Trigger](images/VerifyTrigger.jpg)
 
 ### AFTER INSERT
+The AFTER INSERT trigger is designed to perform certain actions or validations right after a new entry has been successfully added to a database table. This allows for further processing of the newly inserted data, such as updating related records or logging changes, ensuring that our data handling meets established criteria.
+
 1. Execute the command below to create a trigger:
     ``` sql
     CREATE TRIGGER <TriggerName>
