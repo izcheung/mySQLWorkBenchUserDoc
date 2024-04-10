@@ -82,6 +82,8 @@ The AFTER INSERT trigger is designed to perform certain actions or validations r
     !!! note
         For this example, ensure you have created a log table named `<LogTableName>` alongside your main table `<TableName>`. For guidance on creating a new table, please refer to [Create a TABLE](task1.md#create-a-table){:target="_blank"}.
 
+        A log table in MySQL records changes or events that occur within the database, providing a historical record of transactions, system activities, or errors for monitoring, auditing, and troubleshooting purposes.
+
 
     !!! success
         ![After Trigger](images/AfterTrigger.jpg)

@@ -16,7 +16,7 @@ Before getting started, ensure that the tables we plan on joining are all create
 
 
 ## Combine multiple tables
-After preparing multiple tables for joining, you need to decide how to join them. We will cover two of the most common types of SQL joins, **INNER JOIN** and **LEFT JOIN**.
+After preparing multiple tables for joining, you need to decide how to join them. We will cover two of the most common types of SQL joins, **INNER JOIN** and **LEFT JOIN**. INNER JOIN retrieves only rows with matching values in both tables, emphasizing their commonalities. LEFT JOIN includes all rows from the left table, filling in non-matching right table rows with NULL values.
 
 ### INNER JOIN
 1. Execute the command below to perform inner join on two tables:
