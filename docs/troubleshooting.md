@@ -1,5 +1,5 @@
 # Troubleshooting
-| Method     | Description                          |
+| Issue     | Solution                          |
 | ---------- | ------------------------------------ |
 | INSERT data unsuccessful | Ensure that the value for any primary key is unique before insertion. You can use the `INSERT IGNORE` or `ON DUPLICATE KEY UPDATE` syntax to handle duplicates gracefully. |
 | DELETE data unsuccessful | This can occur when trying to delete a row that a foreign key in another table references, without addressing the dependent data. Resolve this by setting up foreign key constraints with `ON DELETE CASCADE` for cascading deletes (be cautious as this automatically deletes dependent records). |
