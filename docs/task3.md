@@ -40,10 +40,13 @@ The BEFORE INSERT trigger is set up to automatically run special checks or tasks
 
     > The `LOWER` clause calls a function that converts text to lowercase.
 
+
+2. Click the refresh button to see your trigger appear on the schema pane.
+
     !!! success
         ![Create Trigger](images/CreateTrigger.jpg)
 
-2. Verify the trigger by performing the action it is designed to respond to.
+3. Verify the trigger by performing the action it is designed to respond to.
 
     For example, after setting up a `BEFORE INSERT` trigger which converts a column's data to lowercase before insertion, you can test the trigger's functionality by attempting to insert a record into the designated table using uppercase letters in the targeted column. Execute the following command to observe the trigger in action:
     ``` sql
@@ -51,7 +54,7 @@ The BEFORE INSERT trigger is set up to automatically run special checks or tasks
     VALUES ('UPPERCASE Value', ...);
     ```
 
-3. Verify that the correct data has been inserted by running the following command for the table updated in step 2:
+4. Verify that the correct data has been inserted by running the following command for the table updated in step 2:
     ``` sql
     SELECT * FROM <TableName>;
     ```
@@ -85,10 +88,12 @@ The AFTER INSERT trigger is designed to perform certain actions or validations r
         A log table in MySQL records changes or events that occur within the database, providing a historical record of transactions, system activities, or errors for monitoring, auditing, and troubleshooting purposes.
 
 
+2. Click the refresh button to see your trigger appear on the schema pane.
+
     !!! success
         ![After Trigger](images/AfterTrigger.jpg)
 
-2. Verify the trigger by performing the action it is designed to respond to.
+3. Verify the trigger by performing the action it is designed to respond to.
 
     For example, after setting up a `AFTER INSERT` trigger which logs a record in the log table after insertion, you can test the trigger's functionality by attempting to insert a record into the designated table and note the change in the log table. Execute the following command to observe the trigger in action:
     ``` sql
@@ -96,7 +101,7 @@ The AFTER INSERT trigger is designed to perform certain actions or validations r
     VALUES ('anything', ...);
     ```
 
-3. Verify that a log record has been created successfully by running the following command for the log table:
+4. Verify that a log record has been created successfully by running the following command for the log table:
     ``` sql
     SELECT * FROM <LogTableName>;
     ```
@@ -118,7 +123,7 @@ Finally, We will go over how to drop the trigger.
         ![Drop Trigger](images/DropTrigger.jpg)
 
 
-2. Repeat step 2 and 3 from [BEFORE INSERT](#before-insert) or [AFTER INSERT](#after-insert) to verify if trigger has been dropped.
+3. Repeat step 2 and 3 from [BEFORE INSERT](#before-insert) or [AFTER INSERT](#after-insert) to verify if trigger has been dropped.
 
     !!! success
         ![Verify Drop Trigger](images/VerifyDropTrigger.jpg)
