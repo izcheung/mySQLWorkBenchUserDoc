@@ -11,13 +11,13 @@ Our goal for this user guide is to provide you with instructions on how to write
 ## How This Guide Was Created
 This guide was created by two people with the use of Git, GitHub, and VS Code. We used MkDocs for the layout of the webpage. The material was generated based on what we learned in COMP 2714 Relational Database Systems. For additional material that was not covered in class, we referred to the official MySQL documentation and W3Schools. 
 
-Who Was This Guide Created For
+## Who Was This Guide Created For
 This documentation is intended for users that are looking for a straightforward guide on learning how to manage a relational database using SQL queries. The main audience this guide was written for are:
 
 - Beginner-level developers who needs a step-by-step guide on writing SQL commands.
 - Analysts requiring SQL for conducting data processing tasks.
 
-Style Guide
+## Style Guide
 Every task within the documentation begins with a brief overview to give readers the context of the topic before going into the instructions. At the bottom of each section, there is a conclusion to summarize what the section has covered. 
 
 To aid in the readability of this guide, we subdivided each task into subheadings which achieve a subtask. Each step was accompanied by figures to guide the reader in showing what the output should look like. 
