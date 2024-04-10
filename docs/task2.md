@@ -19,7 +19,7 @@ Before getting started, ensure that the tables we plan on joining are all create
 After preparing multiple tables for joining, you need to decide how to join them. We will cover two of the most common types of SQL joins, **INNER JOIN** and **LEFT JOIN**.
 
 ### INNER JOIN
-1. Execute the command below to perform inner join on two tables.
+1. Execute the command below to perform inner join on two tables:
     ``` sql
     SELECT <TableName1>.<ColumnName>, <TableName2>.<ColumnName>, ...  
     FROM <TableName1>
@@ -43,7 +43,7 @@ After preparing multiple tables for joining, you need to decide how to join them
 
 
 ### LEFT JOIN
-1. Execute the command below to perform inner join on two tables.
+1. Execute the command below to perform inner join on two tables:
     ``` sql
     SELECT <TableName1>.<ColumnName>, <TableName2>.<ColumnName>, ...    
     FROM <TableName1>
@@ -68,18 +68,20 @@ After preparing multiple tables for joining, you need to decide how to join them
 ## Create a view
 After you combined data from multiple tables, you will need to create a view for the combined data for future reference. 
 
-1. Execute the command below to create a view.
+1. Execute the command below to create a view:
     ``` sql
     CREATE VIEW <ViewName> 
     AS <Query>;                     
     ```
+    In the command provided, replace `<Query>` with the join query you wrote in the previous step (either the [INNER JOIN](#inner-join) or the [LEFT JOIN](#left-join)). 
+
     The `CREATE VIEW` statement allows you to store the result of a complex query as a virtual table. This virtual table, or view, can be queried just like a regular table. 
     
     The `AS` clause defines the query that populates the view, specifying how data should be selected and organized within it.
 
-    >In the command provided, replace `<Query>` with the join query you wrote in the previous step (either the [INNER JOIN](#inner-join) or the [LEFT JOIN](#left-join)). 
 
-2. Verify that the correct table was made by running the following command. 
+
+2. Verify that the correct table was made by running the following command:
     ``` sql
     SELECT * FROM <ViewName>;       
     ```
@@ -100,7 +102,7 @@ After you combined data from multiple tables, you will need to create a view for
 ## Drop a view
 Finally, We will go over how to drop the view. 
 
-1. Run the following command to drop the view in database.
+1. Execute the following command to drop the view in database:
     ``` sql
     DROP VIEW <ViewName>;
     ```
