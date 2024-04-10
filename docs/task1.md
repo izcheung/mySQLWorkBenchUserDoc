@@ -6,31 +6,40 @@ SQL is the most commonly used programming language when managing relational data
 ## Set up a database
 Before getting started, we will need to create a database to store tables.
 
-1. Open a new query tab under 'File' and then click on 'New Query Tab'.
+1. Open MySQL WorkBench.
 
-1. To create a new database, input the following code in the query window and execute it:
+2. Connect to a MySQL server.
+
+3. Open a new query tab under 'File' and then click on 'New Query Tab'.
+
+4. To create a new database, execute the following code in the query window. 
 
     ``` sql
     CREATE DATABASE <DatabaseName>;    
     ```
+    
 
-2. Click the refresh button to see your database appear on the schema pane. 
+5. Click the refresh button to see your database appear on the schema pane:
 
     !!! success
-        ![Image title](./images/DatabaseName4.jpg){ align=left }
+        ![Database Created](./images/DatabaseName4.jpg){ align=left }
 
 
-3. After creating the database, make sure you select that database and use it. 
+6. After creating the database, specify you want to use that database by running the following command:
 ``` sql
 USE <DatabaseName>;
 ```
 
-    > You should see a green checkmark in the action output to signify that the command successfully ran.
+    !!! success
+        After running this query, you should see a green checkmark in the action output:
+            ![Green Checkmark](./images/GreenCheckmark2.jpg)
+        
+    *Moving forward, every successful query should return a green checkmark.*
 
 ## Create a table
 Once you have created a database, you can create and put a new table inside the database. 
 
-1. Run the command below to create a table.
+1. Run the command below to create a table:
 ``` sql
 CREATE TABLE <TableName>        
 (<ColumnName> DATATYPE,         
@@ -38,10 +47,7 @@ CREATE TABLE <TableName>
  <ColumnName> DATATYPE, ...);
 ```
 
-2. Click the refresh button to see your table under the database in the Schema pane.
-
-
-    > At this point, you should see the new table.
+2. Click the refresh button to see your new table under your database in the schema pane:
 
     !!! success
         ![CreateTable](images/CreateTable.jpg)
@@ -49,25 +55,26 @@ CREATE TABLE <TableName>
 ## Insert a tuple into a table
 After creating a table, you can populate the table with data.
 
-1. To insert a tuple into a table, use the following command:
+1. Run the following command to insert a tuple into a table:
 ``` sql
 INSERT INTO <TableName> (<ColumnName1>, <ColumnName2>, <ColumnName3>, ...) 
 VALUES (<Value1>, <Value2>, <Value3>, ...); 
 ```
 
-    > The ```INSERT INTO``` command is used to specify the name of the table you are inserting into. ```VALUES``` specifies the list of values that corresponding to the respective columns listed above.
+    The ```INSERT INTO``` command is used to specify the name of the table you are inserting into. ```VALUES``` specifies the list of values that corresponding to the respective columns listed above.
 
     !!! note
-        Ensure that the values you are inserting into the columns are of the correct datatype.
+        Make sure you insert values into the columns with the correct datatype.
 
-
-2. Verify that the insertion was made correctly by running the following command.  We will refer to this step many times for verifying that the correct changes have been made. You should see the new row in the table.
+2. Verify that the insertion was made correctly by running the command below. *We will refer to this step many times for verifying that the correct changes have been made*:
 
     ``` sql
     SELECT * FROM <TableName>;
     ```
 
-    > The ```SELECT``` command chooses which columns to include in the returned table. The ```*``` symbol means to include all records. The ```FROM``` command tells SQL which table to query from.
+    The ```SELECT``` command chooses which columns to include in the returned table. The ```*``` symbol means to include all records. ```FROM``` command tells SQL which table to query from.
+
+    At this point, you should see your table similar to the example below:
 
     !!! success
         ![Image title](images/VerifyTable.jpg)
@@ -84,7 +91,7 @@ WHERE <ColumnName> = <Value>;
     !!!note
         If you encounter an error Error code 1175, disable safe update mode by referring to the troubleshoot guide.
 
-2. Verify that the correct update was made by running the same command in [step 2](task1.md#insert-a-tuple-into-a-table) of 'Insert a tuple into a table'. You should see the new changes in the updated table.
+2. Verify that the correct update was made by running the same command in [step 2](task1.md#insert-a-tuple-into-a-table) of 'Insert a tuple into a table'. You should see the new changes in the updated table:
 
     !!! success
         ![Update Table Record](images/UpdateTable.jpg)
@@ -96,12 +103,12 @@ WHERE <ColumnName> = <Value>;
 DELETE FROM <TableName>
 WHERE <condition>;
 ```
-    > The ```DELETE FROM``` keyword specifies which table you would like to delete records from. The ```WHERE``` clause specifies the conditions that must be met before the record is deleted.
+    The ```DELETE FROM``` keyword specifies which table you would like to delete records from. The ```WHERE``` clause specifies the conditions that must be met before the record is deleted.
 
     !!! warning
         If you use the DELETE FROM clause without using in junction with the WHERE clause, all the rows in the table will be deleted.
 
-2. Verify the correct deletion was made by running the same command in [step 2](task1.md#insert-a-tuple-into-a-table) of 'Insert a tuple into a table'. You should see that the record has been deleted. 
+2. Verify the correct deletion was made by running the same command in [step 2](task1.md#insert-a-tuple-into-a-table) of 'Insert a tuple into a table'. You should see that the record has been deleted:
 
 
     !!! success
@@ -112,12 +119,13 @@ WHERE <condition>;
 ## Drop a SQL table
 Finally, We will go over how to drop an entire SQL table. 
 
-1. Run the following command to drop an entire table.
+1. Run the following command to drop an entire table:
 ``` sql
 DROP TABLE <TableName>;
 ```
     The ```DROP TABLE``` keyword specifies which table you would like to drop.
 
+    You should see the table disappear from the schema pane when it is successfully dropped:
     !!! success
         ![Drop Table](images/DropTable.jpg)
 
@@ -133,11 +141,3 @@ By the end of this section, you will have learned the SQL commands for the follo
 - [x] Deleting a table record
 - [x] Dropping SQL table
 
-
-in my sql workbench, open up a new query tab to input ...
-
-After every query, run the steps
-Create table section - redo screenshot to show columns
-No bullet points
-Explain log table and purpose of it.
-What the command 

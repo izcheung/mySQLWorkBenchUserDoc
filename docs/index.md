@@ -16,8 +16,8 @@ This documentation is targeted towards the following users:
 ## Prerequisite Knowledge
 This guide assumes that you have the following:
 
-- Basic knowledge of MySQL - expected to know how to connect to a MySQL server and how to run commands
-- Basic knowledge of SQL - know the basic fundamentals such as SQL datatypes
+- Working knowledge of MySQL - know how to connect to a MySQL server and how to run commands
+- Working knowledge of SQL - know the basic fundamentals such as SQL datatypes
 
 ## Software Requirements
 Please ensure you have the following before proceeding with the guide:
