@@ -131,7 +131,7 @@ DROP TABLE <TableName>;
 
 
 ## Conclusion
-By the end of this section, you will have learned the SQL commands for the following:
+By the end of this section, you will have learned the following:
 
 - [x] Understanding what SQL is and how its applied
 - [x] Setting up a database
