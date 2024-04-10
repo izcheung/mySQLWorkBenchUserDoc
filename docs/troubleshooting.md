@@ -1,7 +1,6 @@
 # Troubleshooting
 | Method     | Description                          |
 | ---------- | ------------------------------------ |
-| Red X      | Copy the error message and search it on Google. It is likely a syntax error. |
 | INSERT data unsuccessful | Ensure that the value for any primary key is unique before insertion. You can use the `INSERT IGNORE` or `ON DUPLICATE KEY UPDATE` syntax to handle duplicates gracefully. |
 | DELETE data unsuccessful | This can occur when trying to delete a row that a foreign key in another table references, without addressing the dependent data. Resolve this by setting up foreign key constraints with `ON DELETE CASCADE` for cascading deletes (be cautious as this automatically deletes dependent records). |
 | Unexpected or missing results in JOIN | Ensure the join condition is correct and the appropriate join type (e.g., `INNER JOIN`, `LEFT JOIN`) is used for your query logic. Check that data types of joined fields are compatible. Adjust join type or conditions as needed to match expected results.  |

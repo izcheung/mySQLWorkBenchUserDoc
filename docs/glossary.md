@@ -1,7 +1,6 @@
 # Glossary
 | Terms       | Description                          |
 | ----------- | ------------------------------------ |
-|
 | data integrity | the accuracy and reliability of the data |
 | database    | structured collection of data  |
 | event | a set occurance that triggers the execution of one or more database operations or tasks | 

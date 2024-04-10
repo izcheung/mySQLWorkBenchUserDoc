@@ -6,7 +6,8 @@ SQL is the most commonly used programming language when managing relational data
 ## Set up a database
 Before getting started, we will need to create a database to store tables.
 
-1. To create a new database, input the following code in the query window and execute it using the :fontawesome-solid-bolt-lightning: icon to run:
+1. To create a new database, input the following code in the query window and execute it:
+
     ``` sql
     CREATE DATABASE <DatabaseName>;    
     ```
@@ -82,7 +83,7 @@ WHERE <ColumnName2> = <Original Value>;
     - The ```SET``` keyword specifies which column you wish to change.
     - The ```WHERE``` keyword is used to extract only the records that fulfill the specified condition.
 
-2. Verify that the correct update was made using this (link) command. You should see the new changes in the updated table.
+2. Verify that the correct update was made using the same command in [Insert a tuple into a table Step 2](task1.md#insert-a-tuple-into-a-table). You should see the new changes in the updated table.
 
     !!! success
         ![Update Table Record](images/UpdateTable.jpg)
