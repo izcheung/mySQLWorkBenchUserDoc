@@ -17,7 +17,8 @@ Before getting started, we will need to create a database to store tables.
     ``` sql
     CREATE DATABASE <DatabaseName>;    
     ```
-    
+
+    ```CREATE DATABASE``` intializes a new database in the SQL server.
 
 5. Click the refresh button to see your database appear on the schema pane:
 
@@ -30,11 +31,13 @@ Before getting started, we will need to create a database to store tables.
 USE <DatabaseName>;
 ```
 
+    The ```USE``` statement selects an existing database and directs the following SQL queries to operate within that database. 
+      
+    After running this query, you should see a green checkmark in the action output. *Moving forward, every successful query should return a green checkmark:*
     !!! success
-        After running this query, you should see a green checkmark in the action output:
-            ![Green Checkmark](./images/GreenCheckmark2.jpg)
+        ![Green Checkmark](./images/GreenCheckmark2.jpg)
         
-    *Moving forward, every successful query should return a green checkmark.*
+    
 
 ## Create a table
 Once you have created a database, you can create and put a new table inside the database. 
@@ -47,6 +50,8 @@ CREATE TABLE <TableName>
  <ColumnName> DATATYPE, ...);
 ```
 
+    The ```CREATE TABLE``` command creates a new table in a relational database. 
+    
 2. Click the refresh button to see your new table under your database in the schema pane:
 
     !!! success
