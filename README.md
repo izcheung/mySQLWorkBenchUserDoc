@@ -26,7 +26,7 @@ Throughout the guide, codeblocks were used to represent code. We added the copy 
 
 
 ## Conclusion
-Throughout the process of writing this documentation, we had the opportunity to learn how to write clear and concise instructions in a way that our audience can easily follow.
+Throughout the process of writing this documentation, we had the opportunity to develop our skills in how to write clear and concise instructions in a way that our audience can easily follow.
 
 As this was a two-person project, we developed our communication skills and ability to handle Git conflicts. Through consistent open communication, we are able to adhere to a common style guide. 
 
