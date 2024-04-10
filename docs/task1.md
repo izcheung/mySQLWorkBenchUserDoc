@@ -83,7 +83,7 @@ WHERE <ColumnName2> = <Original Value>;
     - The ```SET``` keyword specifies which column you wish to change.
     - The ```WHERE``` keyword is used to extract only the records that fulfill the specified condition.
 
-2. Verify that the correct update was made using the same command in [Insert a tuple into a table Step 2](task1.md#insert-a-tuple-into-a-table). You should see the new changes in the updated table.
+2. Verify that the correct update was made using the same command in [Insert a tuple into a table Step 2](task1.md#insert-a-tuple-into-a-table) You should see the new changes in the updated table.
 
     !!! success
         ![Update Table Record](images/UpdateTable.jpg)
@@ -115,6 +115,7 @@ Finally, We will go over how to drop an entire SQL table.
 ``` sql
 DROP TABLE <TableName>;
 ```
+    - The ```DROP TABLE``` keyword specifies which table you would like to drop.
 
     !!! success
         ![Drop Table](images/DropTable.jpg)
