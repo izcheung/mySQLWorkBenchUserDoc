@@ -24,5 +24,11 @@ To aid in the readability of this guide, we subdivided each task into subheading
 
 Throughout the guide, codeblocks were used to represent code. We added the copy button to enhance the ease of use of this documentation. At certain points, we added admonitions to provided some tips and notes that would be helpful to users without disrupting the reading flow. In cases where our readers get stuck, we have included a troubleshoot section to help reader fix common mistakes. 
 
-Thank you for your interest in our user documentation for writing MySQL queries in MySQL WorkBench. We hope this documentation provided some value to you. 
+
+## Conclusion
+Throughout the process of writing this documentation, we had the opportunity to learn how to write clear and concise instructions in a way that our audience can easily follow.
+
+As this was a two-person project, we developed our communication skills and ability to handle Git conflicts. Through consistent open communication, we are able to adhere to a common style guide. 
+
+Thank you for your interest in our user documentation for writing SQL queries in MySQL WorkBench. We hope this documentation provided some value to you. 
 
