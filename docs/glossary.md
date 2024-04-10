@@ -1,5 +1,5 @@
 # Glossary
-| Terms       | Description                          |
+| Term       | Description                          |
 | ----------- | ------------------------------------ |
 | data integrity | The accuracy and reliability of the data. |
 | database    | A structured collection of data.  |

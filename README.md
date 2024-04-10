@@ -22,7 +22,7 @@ Every task within the documentation begins with a brief overview to give readers
 
 To aid in the readability of this guide, we subdivided each task into subheadings which achieve a subtask. Each step was accompanied by figures to guide the reader in showing what the output should look like. 
 
-Throughout the guide, codeblocks were used to represent code. We added the copy button to enhance the ease of use of this documentation. At certain points, we added admonitions to provided some tips and notes that would be helpful to users without disrupting the reading flow. In cases where our readers get stuck, we have included a troubleshoot section to help reader fix common mistakes. 
+Throughout the guide, codeblocks were used to represent code. We added the copy button to enhance the ease of use of this documentation. At certain points, we added admonitions to provide some tips and notes that would be helpful to users without disrupting the reading flow. In cases where our readers get stuck, we have included a troubleshoot section to help reader fix common mistakes. 
 
 
 ## Conclusion
