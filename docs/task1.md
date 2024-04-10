@@ -18,7 +18,7 @@ Before getting started, we will need to create a database to store tables.
     CREATE DATABASE <DatabaseName>;    
     ```
 
-    ```CREATE DATABASE``` intializes a new database in the SQL server.
+    > ```CREATE DATABASE``` intializes a new database in the SQL server.
 
 5. Click the refresh button to see your database appear on the schema pane:
 
@@ -31,7 +31,7 @@ Before getting started, we will need to create a database to store tables.
 USE <DatabaseName>;
 ```
 
-    The ```USE``` statement selects an existing database and directs the following SQL queries to operate within that database. 
+    > The ```USE``` statement selects an existing database and directs the following SQL queries to operate within that database. 
       
     After running this query, you should see a green checkmark in the action output. *Moving forward, every successful query should return a green checkmark:*
     !!! success
@@ -50,8 +50,8 @@ CREATE TABLE <TableName>
  <ColumnName> DATATYPE, ...);
 ```
 
-    The ```CREATE TABLE``` command creates a new table in a relational database. 
-    
+    > The ```CREATE TABLE``` command creates a new table in a relational database. 
+
 2. Click the refresh button to see your new table under your database in the schema pane:
 
     !!! success
@@ -66,7 +66,9 @@ INSERT INTO <TableName> (<ColumnName1>, <ColumnName2>, <ColumnName3>, ...)
 VALUES (<Value1>, <Value2>, <Value3>, ...); 
 ```
 
-    The ```INSERT INTO``` command is used to specify the name of the table you are inserting into. ```VALUES``` specifies the list of values that corresponding to the respective columns listed above.
+    > The ```INSERT INTO``` command is used to specify the name of the table you are inserting into. 
+    
+    > ```VALUES``` specifies the list of values that corresponding to the respective columns listed above.
 
     !!! note
         Make sure you insert values into the columns with the correct datatype.
@@ -77,7 +79,12 @@ VALUES (<Value1>, <Value2>, <Value3>, ...);
     SELECT * FROM <TableName>;
     ```
 
-    The ```SELECT``` command chooses which columns to include in the returned table. The ```*``` symbol means to include all records. ```FROM``` command tells SQL which table to query from.
+    > The ```SELECT``` command chooses which columns to include in the returned table. 
+    
+    > The ```*``` symbol means to include all records. 
+    
+    > ```FROM``` command tells SQL which table to query from.
+
 
     At this point, you should see your table similar to the example below:
 
@@ -91,7 +98,12 @@ UPDATE <TableName>
 SET <ColumnName> = <New Value>, ...
 WHERE <ColumnName> = <Value>;
 ```
-    The ```UPDATE``` keyword indicates that you would like to make changes to an existing table. The ```SET``` keyword specifies which column you wish to change. The ```WHERE``` keyword is used to extract only the records that fulfill the specified condition.
+
+    > The ```UPDATE``` keyword indicates that you would like to make changes to an existing table. 
+    
+    > The ```SET``` keyword specifies which column you wish to change. 
+    
+    > The ```WHERE``` keyword is used to extract only the records that fulfill the specified condition.
 
     !!!note
         If you encounter an error Error code 1175, disable safe update mode by referring to the troubleshoot guide.
@@ -108,7 +120,10 @@ WHERE <ColumnName> = <Value>;
 DELETE FROM <TableName>
 WHERE <condition>;
 ```
-    The ```DELETE FROM``` keyword specifies which table you would like to delete records from. The ```WHERE``` clause specifies the conditions that must be met before the record is deleted.
+
+    > The ```DELETE FROM``` keyword specifies which table you would like to delete records from. 
+    
+    > The ```WHERE``` clause specifies the conditions that must be met before the record is deleted.
 
     !!! warning
         If you use the DELETE FROM clause without using in junction with the WHERE clause, all the rows in the table will be deleted.
@@ -128,7 +143,8 @@ Finally, We will go over how to drop an entire SQL table.
 ``` sql
 DROP TABLE <TableName>;
 ```
-    The ```DROP TABLE``` keyword specifies which table you would like to drop.
+
+    > The ```DROP TABLE``` keyword specifies which table you would like to drop.
 
     You should see the table disappear from the schema pane when it is successfully dropped:
     !!! success
