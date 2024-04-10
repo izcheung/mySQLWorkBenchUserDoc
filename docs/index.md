@@ -1,6 +1,6 @@
 # Introduction
 
-In this user documentation, we will be using [MySQL WorkBench](https://www.mysql.com/products/workbench/){:target="_blank"}, an integrated development environment (IDE) for MySQL to systematically guide users through the process of writing commonly-used SQL statements. Our objective is to provide a clear and concise tutorial on how to write SQL commands, equipting developers with the necessary skills to manage databases efficiently within MySQL Workbench.
+In this user documentation, we will be using [MySQL WorkBench](https://www.mysql.com/products/workbench/){:target="_blank"}, an integrated development environment (IDE) for MySQL to systematically guide users through the process of writing commonly-used SQL statements. Our objective is to provide a clear and concise tutorial on how to write SQL commands, equipping developers with the necessary skills to manage databases efficiently within MySQL Workbench.
 
 ## Background
 
@@ -16,13 +16,13 @@ This documentation is targeted towards the following users:
 ## Prerequisite Knowledge
 This guide assumes that you have the following:
 
-- Basic knowledge of MySQL - you are expected to know how to connect to a MySQL server
-- Basic knowledge of SQL - you should know the basic fundamentals such as SQL datatypes and how to run queries
+- Basic knowledge of MySQL - expected to know how to connect to a MySQL server and how to run commands
+- Basic knowledge of SQL - know the basic fundamentals such as SQL datatypes
 
 ## Software Requirements
 Please ensure you have the following before proceeding with the guide:
 
-- **Operating System (OS):** MacOS
+- **Operating System (OS):** MacOS or Windows
 - **Relational Database Management System (RDBMS)**: [MySQL](https://dev.mysql.com/downloads/mysql/){:target="_blank"}
 - **Integrated Development Environment (IDE):** [MySQL WorkBench](https://dev.mysql.com/downloads/workbench/){:target="_blank"}
 
@@ -33,7 +33,12 @@ The three primary tasks utilizing SQL operations covered in this guide includes:
 - Join tables into a **VIEW**
 - Create and drop a **TRIGGER**
 
-## MySQL WorkBench layout
+## MySQL WorkBench Layout
+
+The following screenshot shows the areas of MySQL WorkBench that we will be referring to:
+
+![Layout](images/WorkBenchWindow.jpg)
+
 
 ## Typographical Conventions
 
@@ -41,7 +46,7 @@ Throughout this user documentation, we will use the following layout and element
 
 ### Placeholder
 
-- Whenever you see `< >`, please replace this with your own information. 
+- Whenever you see `< Placeholder >`, please replace this with your own information. 
 - ```...``` Means there can be a variable number of elements.
 
 
