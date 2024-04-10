@@ -26,12 +26,10 @@ After preparing multiple tables for joining, you need to decide how to join them
     INNER JOIN <TableName2>
     ON <TableName1>.<CommonColumnName> = <TableName2>.<CommonColumnName>, ...;
     ```
-    The `INNER JOIN` keyword combines rows from two or more tables based on a related column between them. 
+    
+    > The `INNER JOIN` keyword combines rows from two or more tables based on a related column between them. 
 
-    The `ON` clause specifies the matching condition that identifies which columns from the joined tables are compared to determine matching rows.
-
-    !!! note
-        Within the ```ON``` clause, the `<CommonColumnName>` in the two tables should represent the same data.
+    > The `ON` clause defines the condition to match columns between joined tables, determining the rows to combine.
 
     At this point, you should see the combined table in the output box. 
     !!! success
@@ -50,10 +48,8 @@ After preparing multiple tables for joining, you need to decide how to join them
     LEFT JOIN <TableName2>
     ON <TableName1>.<CommonColumnName> = <TableName2>.<CommonColumnName>, ...;
     ```
-    The `LEFT JOIN` keyword returns all records from the left table, and the matched records from the right table. The records that do not match from the right table will appear as NULL in the result set.
 
-    !!! note
-        Within the ```ON``` clause, the `<CommonColumnName>` in the two tables should represent the same data.
+    > The `LEFT JOIN` keyword merges all left table records with matching records in right table, filling non-matches with NULL.
 
     At this point, you should see the combined table in the output box. 
 
@@ -75,9 +71,9 @@ After you combined data from multiple tables, you will need to create a view for
     ```
     In the command provided, replace `<Query>` with the join query you wrote in the previous step (either the [INNER JOIN](#inner-join) or the [LEFT JOIN](#left-join)). 
 
-    The `CREATE VIEW` statement allows you to store the result of a complex query as a virtual table. This virtual table, or view, can be queried just like a regular table. 
-    
-    The `AS` clause defines the query that populates the view, specifying how data should be selected and organized within it.
+    > The `CREATE VIEW` statement allows you to store the result of a complex query as a virtual table.
+
+    > The `AS` clause defines the query that populates the view.
 
 
 
@@ -86,14 +82,14 @@ After you combined data from multiple tables, you will need to create a view for
     SELECT * FROM <ViewName>;       
     ```
 
-    Make sure the query results match those from the join query in the [Combine multiple tables](#combine-multiple-tables) section.
+3. Click the refresh button to see your view appear on the schema pane and make sure the query results match those from the join query in the [Combine multiple tables](#combine-multiple-tables) section.
 
     !!! success
         ![Image title](images/CreateView.jpg)
 
-3. Follow instructions in [Update a table record](task1.md#update-a-table-record){:target="_blank"} to update a record in one of the original tables. 
+4. Follow instructions in [Update a table record](task1.md#update-a-table-record){:target="_blank"} to update a record in one of the original tables. 
 
-4. Refer to step 2 in this section to verify that the view's content has indeed been updated to mirror the changes made to the original table. Observe how the view automatically updates to reflect these changes, showcasing its dynamic connection to the source data.
+5. Refer to step 2 in this section to verify that the view's content has indeed been updated to mirror the changes made to the original table. Observe how the view automatically updates to reflect these changes, showcasing its dynamic connection to the source data.
 
     !!! success
         ![Update View](images/UpdateView.jpg)
@@ -106,7 +102,8 @@ Finally, We will go over how to drop the view.
     ``` sql
     DROP VIEW <ViewName>;
     ```
-    The `DROP VIEW` statement is used to remove an existing view from the database. This command permanently deletes the specified view, including its structure and associated SQL query, but does not affect the underlying tables from which the view was created.
+
+    > The `DROP VIEW` statement is used to remove an existing view from the database without impacting its source tables.
 
     !!! success
         ![Drop View](images/DropView.jpg)

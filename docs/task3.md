@@ -27,17 +27,18 @@ The BEFORE INSERT trigger is set up to automatically run special checks or tasks
     ``` sql
     SET NEW.<ColumnName> = LOWER(NEW.<ColumnName>);
     ```
-    The `CREATE TRIGGER` command establishes a new trigger, which is a set of actions executed automatically in response to specific events on a table or view in the database. 
+    
+    > The `CREATE TRIGGER` clause initiates an automatic action in response to specific events on a table or view. 
 
-    The `BEFORE INSERT` keyword specifies that the trigger actions should be executed before a new record is inserted into the table.
+    > The `BEFORE INSERT` clause triggers actions to occur before a new record is inserted into the table.
 
-    The `FOR EACH ROW` clause indicates that the trigger should operate on each row affected by the triggering event individually.
+    > The `FOR EACH ROW` clause specifies that the trigger operates on each row affected by the event individually.
 
-    The `SET` command within a trigger or SQL statement assigns a new value to a specified column or variable.
+    > The `SET` keyword is used within triggers to assign new values to specific columns or variables.
 
-    The `NEW` keyword in a trigger context refers to the version of a row that contains the new values for an insert or update operation, allowing triggers to access or modify these new values.
+    > The `NEW` keyword refers to the new row data in insert or update operations.
 
-    The `LOWER` function converts all characters in a specified string to lowercase, useful for standardizing text data before storage or comparison.
+    > The `LOWER` clause calls a function that converts text to lowercase.
 
     !!! success
         ![Create Trigger](images/CreateTrigger.jpg)
@@ -75,7 +76,8 @@ The AFTER INSERT trigger is designed to perform certain actions or validations r
     INSERT INTO <LogTableName> (<ForeignKeyColumn>, <TimestampColumn>)
     VALUES (NEW.<ForeignKeyValue>, NOW());
     ```
-    The `AFTER INSERT` keyword specifies that the trigger actions should occur after a new record is successfully inserted into the table.
+    
+    > The `AFTER INSERT` keyword triggers actions following a successful record insertion.
 
     !!! note
         For this example, ensure you have created a log table named `<LogTableName>` alongside your main table `<TableName>`. For guidance on creating a new table, please refer to [Create a TABLE](task1.md#create-a-table){:target="_blank"}.
@@ -107,7 +109,8 @@ Finally, We will go over how to drop the trigger.
     ``` sql
     DROP TRIGGER <TriggerName>;
     ```
-    The `DROP TRIGGER` statement is used to delete an existing trigger from the database, removing its definition and associated actions.
+    
+    > The `DROP TRIGGER` statement is used to delete an existing trigger from the database.
 
     !!! success
         ![Drop Trigger](images/DropTrigger.jpg)
