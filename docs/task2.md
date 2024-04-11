@@ -31,7 +31,7 @@ After preparing multiple tables for joining, you need to decide how to join them
 
     > The `ON` clause defines the condition to match columns between joined tables, determining the rows to combine.
 
-    At this point, you should see the combined table in the output box. 
+    At this point, you should see the combined table in the output box:
     !!! success
         ![Inner Join](images/InnerJoin.jpg)
 
@@ -51,7 +51,7 @@ After preparing multiple tables for joining, you need to decide how to join them
 
     > The `LEFT JOIN` keyword merges all left table records with matching records in right table, filling non-matches with NULL.
 
-    At this point, you should see the combined table in the output box. 
+    At this point, you should see the combined table in the output box: 
 
     !!! success
         ![Image title](images/LeftJoin.jpg)
@@ -82,14 +82,14 @@ After you combined data from multiple tables, you will need to create a view for
     SELECT * FROM <ViewName>;       
     ```
 
-3. Click the refresh button to see your view appear on the schema pane and make sure the query results match those from the join query in the [Combine multiple tables](#combine-multiple-tables) section.
+3. Click the refresh button to see your view appear on the schema pane and make sure the query results match those from the join query in the [Combine multiple tables](#combine-multiple-tables) section:
 
     !!! success
         ![Image title](images/CreateView.jpg)
 
 4. Follow instructions in [Update a table record](task1.md#update-a-table-record){:target="_blank"} to update a record in one of the original tables. 
 
-5. Refer to step 2 in this section to verify that the view's content has indeed been updated to mirror the changes made to the original table. Observe how the view automatically updates to reflect these changes, showcasing its dynamic connection to the source data.
+5. Refer to step 2 in this section to verify that the view's content has indeed been updated to mirror the changes made to the original table. Observe how the view automatically updates to reflect these changes, showcasing its dynamic connection to the source data:
 
     !!! success
         ![Update View](images/UpdateView.jpg)
@@ -104,6 +104,8 @@ Finally, We will go over how to drop the view.
     ```
 
     > The `DROP VIEW` statement is used to remove an existing view from the database without impacting its source tables.
+
+    You should see the view disappear from the schema pane when it is successfully dropped:
 
     !!! success
         ![Drop View](images/DropView.jpg)

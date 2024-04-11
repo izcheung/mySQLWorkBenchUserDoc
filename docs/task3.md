@@ -41,7 +41,7 @@ The BEFORE INSERT trigger is set up to automatically run special checks or tasks
     > The `LOWER` clause calls a function that converts text to lowercase.
 
 
-2. Click the refresh button to see your trigger appear on the schema pane.
+2. Click the refresh button to see your trigger appear on the schema pane:
 
     !!! success
         ![Create Trigger](images/CreateTrigger.jpg)
@@ -88,7 +88,7 @@ The AFTER INSERT trigger is designed to perform certain actions or validations r
         A log table in MySQL records changes or events that occur within the database, providing a historical record of transactions, system activities, or errors for monitoring, auditing, and troubleshooting purposes.
 
 
-2. Click the refresh button to see your trigger appear on the schema pane.
+2. Click the refresh button to see your trigger appear on the schema pane:
 
     !!! success
         ![After Trigger](images/AfterTrigger.jpg)
@@ -119,11 +119,13 @@ Finally, We will go over how to drop the trigger.
     
     > The `DROP TRIGGER` statement is used to delete an existing trigger from the database.
 
+    You should see the trigger disappear from the schema pane when it is successfully dropped:
+
     !!! success
         ![Drop Trigger](images/DropTrigger.jpg)
 
 
-3. Repeat step 2 and 3 from [BEFORE INSERT](#before-insert) or [AFTER INSERT](#after-insert) to verify if trigger has been dropped.
+3. Repeat step 2 and 3 from [BEFORE INSERT](#before-insert) or [AFTER INSERT](#after-insert) to verify if trigger has been dropped:
 
     !!! success
         ![Verify Drop Trigger](images/VerifyDropTrigger.jpg)
