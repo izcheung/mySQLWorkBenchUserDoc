@@ -117,6 +117,6 @@ By the end of this section, you have gained knowledge on the following tasks:
 
 - [x] Understanding the purpose and utility of joining tables
 - [x] Creating a view from joined tables
-- [x] Combining two tables with "INNER JOIN"
-- [x] Comining two tables with "LEFT JOIN"
+- [x] Combining two tables with INNER JOIN
+- [x] Comining two tables with LEFT JOIN
 - [x] Dropping a view
