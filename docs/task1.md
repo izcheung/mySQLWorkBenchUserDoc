@@ -73,7 +73,7 @@ VALUES (<Value1>, <Value2>, <Value3>, ...);
     !!! note
         Make sure you insert values into the columns with the correct datatype.
 
-2. Verify that the insertion was made correctly by running the command below. *We will refer to this step many times for verifying that the correct changes have been made*:
+2. Verify that the insertion was made correctly by running the command below. *We will refer to this command many times for verifying that the correct changes have been made*:
 
     ``` sql
     SELECT * FROM <TableName>;
@@ -115,7 +115,7 @@ WHERE <ColumnName> = <Value>;
 
 ## Delete a table record
 
-1. In order to delete a table record, run the following command.
+1. In order to delete a table record, run the following command:
 ``` sql
 DELETE FROM <TableName>
 WHERE <condition>;
