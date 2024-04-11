@@ -12,7 +12,7 @@ Before getting started, we will need to create a database to store tables.
 
 3. Open a new query tab under 'File' and then click on 'New Query Tab'.
 
-4. To create a new database, execute the following code in the query window. 
+4. To create a new database, execute the following code in the query window:
 
     ``` sql
     CREATE DATABASE <DatabaseName>;    
@@ -20,7 +20,7 @@ Before getting started, we will need to create a database to store tables.
 
     > ```CREATE DATABASE``` intializes a new database in the SQL server.
 
-5. Click the refresh button to see your database appear on the schema pane:
+5. Click the refresh button to see your database appear on the schema pane.
 
     !!! success
         ![Database Created](./images/DatabaseName4.jpg){ align=left }
@@ -33,7 +33,7 @@ USE <DatabaseName>;
 
     > The ```USE``` statement selects an existing database and directs the following SQL queries to operate within that database. 
       
-    After running this query, you should see a green checkmark in the action output. *Moving forward, every successful query should return a green checkmark:*
+    After running this query, you should see a green checkmark in the action output. *Moving forward, every successful query should return a green checkmark.*
     !!! success
         ![Green Checkmark](./images/GreenCheckmark2.jpg)
         
@@ -52,7 +52,7 @@ CREATE TABLE <TableName>
 
     > The ```CREATE TABLE``` command creates a new table in a relational database. 
 
-2. Click the refresh button to see your new table under your database in the schema pane:
+2. Click the refresh button to see your new table under your database in the schema pane.
 
     !!! success
         ![CreateTable](images/CreateTable.jpg)
@@ -86,7 +86,7 @@ VALUES (<Value1>, <Value2>, <Value3>, ...);
     > ```FROM``` command tells SQL which table to query from.
 
 
-    At this point, you should see your table similar to the example below:
+    At this point, you should see your table similar to the example below.
 
     !!! success
         ![Image title](images/VerifyTable.jpg)
@@ -108,14 +108,14 @@ WHERE <ColumnName> = <Value>;
     !!!note
         If you encounter an error Error code 1175, disable safe update mode by referring to the troubleshoot guide.
 
-2. Verify that the correct update was made by running the same command in [step 2](task1.md#insert-a-tuple-into-a-table) of 'Insert a tuple into a table'. You should see the new changes in the updated table:
+2. Verify that the correct update was made by running the same command in [step 2](task1.md#insert-a-tuple-into-a-table) of 'Insert a tuple into a table'. You should see the new changes in the updated table.
 
     !!! success
         ![Update Table Record](images/UpdateTable.jpg)
 
 ## Delete a table record
 
-1. In order to delete a table record, run the following command.
+1. In order to delete a table record, run the following command:
 ``` sql
 DELETE FROM <TableName>
 WHERE <condition>;
@@ -128,7 +128,7 @@ WHERE <condition>;
     !!! warning
         If you use the DELETE FROM clause without using in junction with the WHERE clause, all the rows in the table will be deleted.
 
-2. Verify the correct deletion was made by running the same command in [step 2](task1.md#insert-a-tuple-into-a-table) of 'Insert a tuple into a table'. You should see that the record has been deleted:
+2. Verify the correct deletion was made by running the same command in [step 2](task1.md#insert-a-tuple-into-a-table) of 'Insert a tuple into a table'. You should see that the record has been deleted.
 
 
     !!! success
@@ -146,7 +146,7 @@ DROP TABLE <TableName>;
 
     > The ```DROP TABLE``` keyword specifies which table you would like to drop.
 
-    You should see the table disappear from the schema pane when it is successfully dropped:
+    You should see the table disappear from the schema pane when it is successfully dropped.
     !!! success
         ![Drop Table](images/DropTable.jpg)
 
