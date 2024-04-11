@@ -115,7 +115,7 @@ WHERE <ColumnName> = <Value>;
 
 ## Delete a table record
 
-1. In order to delete a table record, run the following command.
+1. In order to delete a table record, run the following command:
 ``` sql
 DELETE FROM <TableName>
 WHERE <condition>;
