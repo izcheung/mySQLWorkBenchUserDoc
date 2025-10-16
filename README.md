@@ -9,7 +9,7 @@ Our goal for this user guide is to provide you with instructions on how to write
 - Creating and dropping a trigger
 
 ## How This Guide Was Created
-This guide was created by two people with the use of Git, GitHub, and VS Code. We used MkDocs for the layout of the webpage. The material was generated based on what we learned in COMP 2714 Relational Database Systems. For additional material that was not covered in class, we referred to the official MySQL documentation and W3Schools. 
+This guide was created with the use of Git, GitHub, and VS Code. We used MkDocs for the layout of the webpage. The material was generated based on what we learned in COMP 2714 Relational Database Systems. For additional material that was not covered in class, we referred to the official MySQL documentation and W3Schools. 
 
 ## Who Was This Guide Created For
 This documentation is intended for users that are looking for a straightforward guide on learning how to manage a relational database using SQL queries. The main audience this guide was written for are:
@@ -31,4 +31,8 @@ Throughout the process of writing this documentation, we had the opportunity to 
 As this was a two-person project, we developed our communication skills and ability to handle Git conflicts. Through consistent open communication, we are able to adhere to a common style guide. 
 
 Thank you for your interest in our user documentation for writing SQL queries in MySQL WorkBench. We hope this documentation provided some value to you. 
+
+## Contributors
+- Irene Cheung
+- Hsin Pang
 
